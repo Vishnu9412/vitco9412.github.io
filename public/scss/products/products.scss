@@ -24,6 +24,8 @@
 body,
 html {
     overflow-x: hidden;
+    user-select: none;
+    pointer-events: none;
 }
 
 // --=================================================================================================================
@@ -46,6 +48,8 @@ html {
         box-sizing: 0;
         cursor: pointer;
         transition: all 0.5s ease-in-out;
+        pointer-events: none;
+        user-select: none;
         &:hover {
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
@@ -301,17 +305,9 @@ html {
 // ========================================================================
 //  MEDIA QUERIES
 // ========================================================================
-// @media (min-width: 1023px) {
-//     .search-overlay {
-//         display: none;
-//     }
-//     html {
-//         overflow-y: scroll!important;
-//     }
-// }
 @media (max-width: 1023px) {
     .category1 {
-        top: 4em;
+        top: 5em!important;
     }
     .cards-group {
         margin-top: 5em;
@@ -372,7 +368,7 @@ html {
     //     }
     // }
     .category1 {
-        top: 3em;
+        top: 3em!important;
     }
     body>hr {
         display: none;
@@ -380,9 +376,6 @@ html {
 }
 
 @media (max-width: 1210px) {
-    .hotline-number {
-        left: -1em !important;
-    }
     .nav-links {
         left: 13em;
     }
